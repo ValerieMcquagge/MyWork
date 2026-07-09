@@ -1,74 +1,33 @@
-:root{
-
---springhill:#7A9A72;
-
---snow:#F8F7F0;
-
---vines:#5F7A4F;
-
---text:#263326;
-
-}
-
-
-
 *{
-
-margin:0;
-padding:0;
-box-sizing:border-box;
-
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
-
-
-
-html{
-
-scroll-behavior:smooth;
-
-}
-
 
 
 body{
 
-font-family:Poppins,sans-serif;
+    font-family:Arial, sans-serif;
 
-background:var(--springhill);
+    background:#7A9A72;
 
-color:var(--text);
+    color:#263326;
 
 }
 
 
 
-
-/* NAV */
-
 .navbar{
 
-position:fixed;
+    display:flex;
 
-top:0;
+    align-items:center;
 
-width:100%;
+    justify-content:space-between;
 
-padding:18px 8%;
+    padding:20px 8%;
 
-
-display:flex;
-
-align-items:center;
-
-justify-content:space-between;
-
-
-background:var(--snow);
-
-z-index:100;
-
-
-box-shadow:0 5px 20px rgba(0,0,0,.08);
+    background:#F8F7F0;
 
 }
 
@@ -76,11 +35,7 @@ box-shadow:0 5px 20px rgba(0,0,0,.08);
 
 .logo{
 
-font-weight:700;
-
-font-size:1.4rem;
-
-color:var(--vines);
+    color:#5F7A4F;
 
 }
 
@@ -88,11 +43,11 @@ color:var(--vines);
 
 .nav-links{
 
-display:flex;
+    display:flex;
 
-gap:25px;
+    gap:20px;
 
-list-style:none;
+    list-style:none;
 
 }
 
@@ -100,74 +55,46 @@ list-style:none;
 
 .nav-links a{
 
-text-decoration:none;
+    text-decoration:none;
 
-color:var(--text);
-
-}
-
-
-
-.nav-links a:hover{
-
-color:var(--vines);
+    color:#263326;
 
 }
 
 
 
-/* SMALL IMAGE */
+.profile{
 
-.profile-small img{
+    width:55px;
 
-width:45px;
+    height:55px;
 
-height:45px;
+    border-radius:50%;
 
-border-radius:50%;
+    object-fit:cover;
 
-object-fit:cover;
-
-border:3px solid var(--vines);
+    border:3px solid #5F7A4F;
 
 }
 
 
-
-
-
-/* HERO */
 
 
 .hero{
 
-height:100vh;
+    height:80vh;
 
-display:flex;
+    display:flex;
 
-flex-direction:column;
+    flex-direction:column;
 
-align-items:center;
+    justify-content:center;
 
-justify-content:center;
+    align-items:center;
 
-text-align:center;
+    text-align:center;
 
-}
-
-
-
-.profile-image{
-
-width:190px;
-
-height:190px;
-
-border-radius:50%;
-
-object-fit:cover;
-
-border:8px solid var(--snow);
+    color:white;
 
 }
 
@@ -175,116 +102,48 @@ border:8px solid var(--snow);
 
 .hero h1{
 
-font-size:4rem;
-
-color:white;
+    font-size:60px;
 
 }
 
 
 
-.hero h2{
+.button{
 
-color:var(--snow);
+    margin-top:25px;
 
-margin:15px;
+    padding:12px 30px;
 
-}
+    background:#5F7A4F;
 
+    color:white;
 
+    border-radius:30px;
 
-.hero p{
-
-color:white;
-
-}
-
-
-
-
-
-/* BUTTONS */
-
-
-.btn{
-
-display:inline-block;
-
-padding:13px 30px;
-
-margin:20px 8px;
-
-border-radius:30px;
-
-background:var(--vines);
-
-color:white;
-
-text-decoration:none;
-
-font-weight:600;
-
-}
-
-
-
-.btn:hover{
-
-opacity:.85;
-
-}
-
-
-
-.secondary{
-
-background:var(--snow);
-
-color:var(--vines);
+    text-decoration:none;
 
 }
 
 
 
 
+section{
 
-/* SECTIONS */
+    background:#F8F7F0;
 
-
-.section{
-
-padding:100px 10%;
-
-background:var(--snow);
+    padding:70px 10%;
 
 }
 
 
 
-.section h2{
+section h2{
 
-text-align:center;
+    text-align:center;
 
-color:var(--vines);
+    margin-bottom:30px;
 
-margin-bottom:40px;
-
-}
-
-
-
-
-
-/* CARDS */
-
-
-.grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-
-gap:25px;
+    color:#5F7A4F;
 
 }
 
@@ -292,74 +151,48 @@ gap:25px;
 
 .card{
 
-background:white;
+    background:white;
 
-padding:30px;
+    padding:25px;
 
-border-radius:20px;
+    border-radius:15px;
 
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-
-transition:.3s;
-
-}
-
-
-
-.card:hover{
-
-transform:translateY(-8px);
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
 
 }
 
 
 
 
+.grid{
 
-/* ANIMATION */
+    display:grid;
 
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 
-.reveal{
-
-opacity:0;
-
-transform:translateY(30px);
-
-transition:.8s;
+    gap:20px;
 
 }
-
-
-.reveal.active{
-
-opacity:1;
-
-transform:translateY(0);
-
-}
-
 
 
 
 
 footer{
 
-background:var(--vines);
+    background:#5F7A4F;
 
-color:white;
+    color:white;
 
-text-align:center;
+    text-align:center;
 
-padding:35px;
+    padding:25px;
 
 }
 
 
 
 
-
 @media(max-width:700px){
-
 
 .nav-links{
 
@@ -370,9 +203,8 @@ display:none;
 
 .hero h1{
 
-font-size:2.5rem;
+font-size:40px;
 
 }
-
 
 }
