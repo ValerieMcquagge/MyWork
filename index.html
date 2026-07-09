@@ -2,69 +2,112 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Valerie McQuagge | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+<title>Valerie McQuagge | Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 
 <body>
 
+
+<!-- NAVIGATION -->
+
 <header>
 
-    <nav class="navbar">
-
-        <h2 class="logo">
-            Valerie McQuagge
-        </h2>
+<nav class="navbar">
 
 
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+<div class="logo">
+Valerie McQuagge
+</div>
 
 
-        <img 
-        class="profile"
-        src="valerie.jpg"
-        alt="Valerie McQuagge">
 
-    </nav>
+<ul class="nav-links">
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#skills">Skills</a></li>
+
+<li><a href="#projects">Projects</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+
+
+<!-- Small Profile Picture -->
+
+<div class="profile-small">
+
+<img src="images/valerie.jpg" alt="Valerie McQuagge">
+
+</div>
+
+
+</nav>
 
 </header>
 
 
 
-<section class="hero">
-
-    <h1>
-        Valerie McQuagge
-    </h1>
 
 
-    <h3>
-        Data • Technology • Design
-    </h3>
+
+<!-- HERO SECTION -->
+
+<section id="home" class="hero">
 
 
-    <p>
-        Welcome to my personal portfolio website.
-    </p>
+<img class="profile-image" 
+src="valerie.jpg"
+alt="Valerie McQuagge">
 
 
-    <a class="button" 
-    href="https://www.linkedin.com/in/valerieamcquagge"
-    target="_blank">
+<h1>
+Valerie McQuagge
+</h1>
 
-    LinkedIn
 
-    </a>
+<h2>
+<span id="typing"></span>
+</h2>
+
+
+<p>
+Technology • Data • Design • Problem Solving
+</p>
+
+
+
+<div>
+
+<a class="btn" href="files/resume.pdf">
+Download Resume
+</a>
+
+
+<a class="btn secondary" 
+href="https://www.linkedin.com/in/valerieamcquagge"
+target="_blank">
+
+LinkedIn
+
+</a>
+
+
+</div>
 
 
 </section>
@@ -72,22 +115,32 @@
 
 
 
-<section id="about">
-
-    <h2>
-        About Me
-    </h2>
 
 
-    <div class="card">
 
-        <p>
-        I am interested in technology, data analysis,
-        user experience, and creating solutions through
-        problem solving and design.
-        </p>
 
-    </div>
+<!-- ABOUT -->
+
+<section id="about" class="section">
+
+
+<h2>
+About Me
+</h2>
+
+
+<div class="card reveal">
+
+
+<p>
+
+Hello! I'm Valerie McQuagge. I am passionate about technology, data analysis, user experience, and creating meaningful solutions through problem solving and design.
+
+</p>
+
+
+</div>
+
 
 </section>
 
@@ -95,47 +148,66 @@
 
 
 
-<section id="skills">
+
+
+
+<!-- SKILLS -->
+
+<section id="skills" class="section">
+
 
 <h2>
 Skills
 </h2>
 
 
+
 <div class="grid">
 
 
-<div class="card">
+<div class="card reveal">
+Google Workspace
+</div>
+
+
+<div class="card reveal">
+Microsoft 365
+</div>
+
+
+<div class="card reveal">
 Excel
 </div>
 
 
-<div class="card">
+<div class="card reveal">
 SQL
 </div>
 
 
-<div class="card">
+<div class="card reveal">
 Tableau
 </div>
 
 
-<div class="card">
+<div class="card reveal">
 Figma
 </div>
 
 
-<div class="card">
+<div class="card reveal">
 UX Research
 </div>
 
 
-<div class="card">
+<div class="card reveal">
 Project Management
 </div>
 
 
+
 </div>
+
 
 </section>
 
@@ -145,43 +217,67 @@ Project Management
 
 
 
-<section id="projects">
+
+
+<!-- PROJECTS -->
+
+<section id="projects" class="section">
+
 
 <h2>
 Projects
 </h2>
 
 
+
 <div class="grid">
 
 
-<div class="card">
+<div class="card reveal">
 
 <h3>
 Project One
 </h3>
 
 <p>
-Add your project here.
+Add your project description here.
 </p>
 
 </div>
 
 
-<div class="card">
+
+
+<div class="card reveal">
 
 <h3>
 Project Two
 </h3>
 
 <p>
-Add your project here.
+Add your project description here.
+</p>
+
+</div>
+
+
+
+
+<div class="card reveal">
+
+<h3>
+Project Three
+</h3>
+
+<p>
+Add your project description here.
 </p>
 
 </div>
 
 
 </div>
+
 
 
 </section>
@@ -191,14 +287,21 @@ Add your project here.
 
 
 
-<section id="contact">
+
+
+<!-- CONTACT -->
+
+
+<section id="contact" class="section">
+
 
 <h2>
 Contact
 </h2>
 
 
-<div class="card">
+<div class="card reveal">
+
 
 <p>
 LinkedIn:
@@ -207,6 +310,14 @@ Valerie McQuagge
 </a>
 </p>
 
+
+
+<p>
+Email:
+ValerieArleenM@Gmail.com
+</p>
+
+
 </div>
 
 
@@ -214,18 +325,23 @@ Valerie McQuagge
 
 
 
+
+
+
+
 <footer>
 
-<p>
 © 2026 Valerie McQuagge
-</p>
 
 </footer>
 
 
 
+
 <script src="script.js"></script>
+
 
 </body>
 
 </html>
+
