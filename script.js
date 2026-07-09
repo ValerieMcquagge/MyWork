@@ -1,4 +1,4 @@
-// Typing animation
+// Typing effect
 
 const words = [
 "Data Analyst",
@@ -8,19 +8,19 @@ const words = [
 ];
 
 
-let wordIndex = 0;
-let letterIndex = 0;
+let word = 0;
+let letter = 0;
 
 const typing = document.getElementById("typing");
 
 
 function type(){
 
-if(letterIndex < words[wordIndex].length){
+if(letter < words[word].length){
 
-typing.textContent += words[wordIndex][letterIndex];
+typing.textContent += words[word][letter];
 
-letterIndex++;
+letter++;
 
 setTimeout(type,100);
 
@@ -28,7 +28,7 @@ setTimeout(type,100);
 
 else{
 
-setTimeout(deleteWord,1500);
+setTimeout(remove,1500);
 
 }
 
@@ -36,34 +36,76 @@ setTimeout(deleteWord,1500);
 
 
 
-function deleteWord(){
+function remove(){
 
-if(letterIndex > 0){
+if(letter > 0){
 
 typing.textContent =
-words[wordIndex].substring(0,letterIndex-1);
+words[word].substring(0,letter-1);
 
-letterIndex--;
+letter--;
 
-setTimeout(deleteWord,50);
+setTimeout(remove,50);
 
 }
 
 else{
 
-wordIndex++;
 
-if(wordIndex >= words.length){
+word++;
 
-wordIndex=0;
+
+if(word >= words.length){
+
+word=0;
 
 }
+
 
 setTimeout(type,500);
 
+
 }
 
 }
+
 
 
 type();
+
+
+
+
+
+
+
+// Scroll animations
+
+
+const elements=document.querySelectorAll(".reveal");
+
+
+window.addEventListener("scroll",()=>{
+
+
+elements.forEach(element=>{
+
+
+const position =
+element.getBoundingClientRect().top;
+
+
+
+if(position < window.innerHeight-100){
+
+
+element.classList.add("active");
+
+
+}
+
+
+});
+
+
+});
